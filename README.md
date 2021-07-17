@@ -7,7 +7,7 @@
 
 <p align="center">
   <a href="https://github.com/NicolasMB3/NicolasBAAR_2_18072021">
-    <h1>Reservia</h1>
+    Reservia
   </a>
 
   <p align="center">
