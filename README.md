@@ -7,7 +7,7 @@
 
 <p align="center">
   <a href="https://github.com/NicolasMB3/NicolasBAAR_2_18072021">
-    Reservia
+    <img src="images/logo/Reservia.svg" alt="Logo">
   </a>
 
   <p align="center">
