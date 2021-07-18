@@ -13,16 +13,27 @@ body {
 .container {
    max-width: 100%;
    margin: auto;
-   padding: 0 5rem;
 }
 
 main {
    display: block;
    margin-top: 2.5%;
+   padding: 0 5rem;
 }
 
 #subTitle {
    margin-top: 0.8%;
+}
+
+/* Code pour Firefox */
+::-moz-selection {
+   color: #ffffff;
+   background: #0065FC;
+ }
+ 
+::selection {
+   color: #ffffff;
+   background: #0065FC;
 }
 
 /* Fin Éléments globals au site */
@@ -40,7 +51,7 @@ a {
    text-decoration: none;
 }
 
-#div1 > a {
+#divNavigation > a {
    display: flex;
    justify-content: center;
    align-items: center;
@@ -48,12 +59,13 @@ a {
    padding: 2.4vw 1.8vw 2.4vw 1.8vw;
 }
 
-#div1 > a:hover {
+#divNavigation > a:hover {
    border-top: 3px solid #0065FC;
    color: #0065FC;
 }
 
-#div1 {
+#divNavigation {
+   padding: 0 5rem;
    display: grid;
    grid-template-columns: 60% auto auto auto;
 }
@@ -141,6 +153,10 @@ i.fas {
    border-right: 2px solid #d9d9d9;
 }
 
+.ecoSearch:hover {
+   border-color: #DEEBFF;
+}
+
 .boxFont {
    background-color: #DEEBFF;
    color: #0065fc;
@@ -196,13 +212,13 @@ i.fas {
 
 /* Début hébergement Marseille */
 
-#div3 {
+#divHosts {
    display: grid;
    grid-template-columns: 100%;
    margin-bottom: 4rem;
 }
 
-.gridDiv3 {
+.griddivHosts {
    max-width: 100%;
    display: grid;
    grid-template-columns: 65% auto;
@@ -225,8 +241,7 @@ i.fas {
 }
 
 .hostSearhResult {
-   padding: 1rem 2rem 2rem 2rem;
-   
+   padding: 1rem 2rem 2rem 2rem;  
 }
 
 .titleSearch {
@@ -391,27 +406,133 @@ i.fas {
 
 /* Fin "Les plus populaire" */
 
-#div4 {
-   grid-column-start: 1;
-   grid-column-end: 9;
-   grid-row-start: 5;
-   background-color: rgb(92, 34, 167);
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   height: 45vh;
+/* Début activités Marseille */
+
+#divActivites {
+   display: grid;
+   grid-template-columns: repeat(4 ,1fr);
+   grid-template-rows: repeat(1, 1fr);
+   gap: 2rem;
+   margin-bottom: 4rem;
+   font-weight: bold;
 }
 
-#div5 {
+.part1 {
+   border-radius: 30px;
+   box-shadow:
+      0 1.9px 49.2px -90px rgba(0, 0, 0, 0.093),
+      0 4.8px 90px -90px rgba(0, 0, 0, 0.133),
+      0 9.7px 127.4px -90px rgba(0, 0, 0, 0.167),
+      0 20.1px 178.6px -90px rgba(0, 0, 0, 0.207),
+      0 55px 359px -90px rgba(0, 0, 0, 0.3);
+}
+
+.sousPart1, .sousPart2, .sousPart3, .sousPart4 {
+   box-shadow:
+      0 1.9px 49.2px -90px rgba(0, 0, 0, 0.093),
+      0 4.8px 90px -90px rgba(0, 0, 0, 0.133),
+      0 9.7px 127.4px -90px rgba(0, 0, 0, 0.167),
+      0 20.1px 178.6px -90px rgba(0, 0, 0, 0.207),
+      0 55px 359px -90px rgba(0, 0, 0, 0.3);
+}
+
+.part2 {
+   display: grid;
+   grid-template-columns: repeat(1 ,1fr);
+   grid-template-rows: 2fr;
+   height: 100%;  
+   gap: 2rem;
+}
+
+.part3 {
+   display: grid;
+   grid-template-columns: repeat(1 ,1fr);
+   grid-template-rows: 2fr;
+   height: 100%; 
+   gap: 2rem; 
+}
+
+.sousPart1, .sousPart2, .sousPart3, .sousPart4 {
+   border-radius: 30px;
+}
+
+.imageBanner2 {
+   object-fit: cover;
+   object-position: center;
+   height: 25em;
+   width: 100%;
+   max-width: 100%;
+   max-height: 100%;
+   border-top-left-radius: 1.2rem;
+   border-top-right-radius: 1.2rem;
+}
+
+.imageBanner3 {
+   object-fit: cover;
+   object-position: center;
+   height: 11em;
+   width: 100%;
+   max-width: 100%;
+   max-height: 100%;
+   border-top-left-radius: 1.2rem;
+   border-top-right-radius: 1.2rem;
+}
+
+.imageBanner4 {
+   object-fit: cover;
+   object-position: center;
+   height: 8em;
+   width: 100%;
+   max-width: 100%;
+   max-height: 100%;
+   border-top-left-radius: 1.2rem;
+   border-top-right-radius: 1.2rem;
+}
+
+.classResult1 p {
+   margin-top: 0.5em;
+   padding-right: 2em;
+}
+
+.subTitleActivities {
+   margin-top: 0.5em;
+   padding-left: 2em;
+   padding-right: 2em;
+}
+
+h3 {
+   display: flex;
+   align-items: center;
+}
+
+/* Fin activités Marseille */
+
+/* Début footer */
+
+#divFooter {
    grid-column-start: 1;
    grid-column-end: 9;
    grid-row-start: 6;
-   background-color: rgb(60, 26, 105);
+   background-color: rgb(242, 242, 242);
    display: flex;
-   justify-content: center;
    align-items: center;
-   height: 20vh;
+   height: auto;
 }
+
+.gridFooter a {
+   padding: 0.5em 0.5em 0.5em 0;
+   display: flex;
+}
+
+.gridFooter {
+   display: grid;
+   grid-template-columns: repeat(3 ,1fr);
+   grid-template-rows: repeat(1 ,1fr);
+   gap: 15rem;
+   margin: 3em 2em 2rem 5rem;
+}
+
+/* Fin footer */
 
 /* Début des médias queries */
 
@@ -434,7 +555,7 @@ i.fas {
       font-size: 24px;
    }
 
-   .container {
+   main {
       padding: 0;
    }
 
@@ -457,16 +578,17 @@ i.fas {
       margin: 0;
    }
 
-   #div1 {
+   #divNavigation {
       grid-template-columns: auto auto;
       grid-template-rows: auto auto;
+      padding: 0;
    }
 
    .register {
       grid-area: 1/2;
    } 
 
-   #div1 > a:hover {
+   #divNavigation > a:hover {
       border-top: none;
    }
 
@@ -493,7 +615,7 @@ i.fas {
       min-width: 4em;
    }
 
-   .gridDiv3 {
+   .griddivHosts {
       grid-template-columns: repeat(1 ,1fr);
       grid-template-rows: repeat(1, 1fr);
   }
@@ -515,7 +637,7 @@ i.fas {
 
    .imageBanner {
       height: 9rem;
-  }
+   }
 
   .gridClassMost {
    margin-top: 0;
@@ -537,12 +659,56 @@ i.fas {
    .informationShop1 {
       padding-left: 0.5em;
    }
+
+   .hostSearhResult {
+      padding: 1rem 1rem 2rem 1rem;  
+   }
+
+   /* Début activités à Marseille */
+
+   #divActivites {
+      grid-template-columns: repeat(1 ,1fr);
+      grid-template-rows: 6fr;
+   }
+   
+   .activitiesCont {
+      margin: 0 1.5em 0 1.5em;
+   }
+   
+   .imageBanner4, .imageBanner2, .imageBanner3 {
+      height: 10em;
+   }
+
+   .gridFooter {
+      gap: 4em;
+   }
+      
+   /* Fin activités à Marseille */
 }
 
+/* Fin des médias queries tablette */
+
+/* Début responsive téléphone */
+
 @media (max-width: 600px) {
+
+   /* Début responsive téléphone pour les plus populaire à Marseille */
+
    .gridClassResult {
       grid-template-columns: repeat(1 ,1fr);
    }
+
+   /* Fin responsive téléphone pour les plus populaire à Marseille */
+
+   /* Début footer */
+
+   .gridFooter {
+      grid-template-columns: repeat(1 ,1fr);
+      gap: 2%;
+      margin: 2em 2em 3em 3em;
+   }
+   
+   /* Fin footer */
 }
 
-/* Fin des médias queries */
+/* Fin responsive téléphone */

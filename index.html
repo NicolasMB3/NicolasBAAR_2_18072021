@@ -10,7 +10,7 @@
       @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
    </style>
    <!-- Supprimer les arrondis sur Safari, marche pas dans le css ... -->
-   <style type="text/css">
+   <style>
       input, textarea {
          -webkit-appearance: none;
          border-radius: 0; 
@@ -22,7 +22,7 @@
    <div class="container">
       <!-- Header / navigation -->
       <header>
-         <nav id="div1">
+         <nav id="divNavigation">
             <div id="logo">
                <a href="#"><img src="images/logo/Reservia.svg" alt="Logo de Reservia"/></a>
             </div>
@@ -41,7 +41,7 @@
                <input class="inputText" type="search" placeholder="Marseille, France">
                <button class="buttonSearch">
                   <i class="fas fa-search" aria-hidden="true"></i>
-                  <p class="switch">Rechercher</p>
+                  <span class="switch">Rechercher</span>
               </button>
             </div>
             <section class="filters">
@@ -77,8 +77,8 @@
             </div>
          </div>
          <!-- Résultats recherche -->
-         <div id="div3">
-            <div class="gridDiv3">
+         <div id="divHosts">
+            <div class="griddivHosts">
                <div class="host">
                   <div class="hostSearhResult">
                      <p class="titleSearch">Hébergements à Marseille</p>
@@ -86,7 +86,7 @@
                         <!-- Grid pour les hébergements à ... -->
                         <a class="classResult1">
                            <div class="imageBannerPadding">
-                              <img class="imageBanner" src="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg">
+                              <img class="imageBanner" src="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Image d'hébergement sur Marseille">
                            </div>
                            <div class="informationShop">
                               <p class="firstTestDescription">Auberge la Cannebière</p>
@@ -102,7 +102,7 @@
                         </a>
                         <a class="classResult1">
                            <div class="imageBannerPadding">
-                              <img class="imageBanner" src="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg">
+                              <img class="imageBanner" src="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Image d'hébergement sur Marseille">
                            </div>
                            <div class="informationShop">
                               <p class="firstTestDescription">Hôtel du port</p>
@@ -118,7 +118,7 @@
                         </a>
                         <a class="classResult1">
                            <div class="imageBannerPadding">
-                              <img class="imageBanner" src="images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg">
+                              <img class="imageBanner" src="images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Image d'hébergement sur Marseille">
                            </div>
                            <div class="informationShop">
                               <p class="firstTestDescription">Hôtel Les mouettes</p>
@@ -134,7 +134,7 @@
                         </a>
                         <a class="classResult1">
                            <div class="imageBannerPadding">
-                              <img class="imageBanner" src="images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
+                              <img class="imageBanner" src="images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Image d'hébergement sur Marseille">
                            </div>
                            <div class="informationShop">
                               <p class="firstTestDescription">Hôtel de la mer</p>
@@ -150,7 +150,7 @@
                         </a>
                         <a class="classResult1">
                            <div class="imageBannerPadding">
-                              <img class="imageBanner" src="images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg">
+                              <img class="imageBanner" src="images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Image d'hébergement sur Marseille">
                            </div>
                            <div class="informationShop">
                               <p class="firstTestDescription">Auberge Le Panier</p>
@@ -166,7 +166,7 @@
                         </a>
                         <a class="classResult1">
                            <div class="imageBannerPadding">
-                              <img class="imageBanner" src="images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg">
+                              <img class="imageBanner" src="images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Image d'hébergement sur Marseille">
                            </div>
                            <div class="informationShop">
                               <p class="firstTestDescription">Hôtel chez Amina</p>
@@ -196,7 +196,7 @@
                            <!-- Grid pour les hébergements à ... -->
                            <a class="classMost1">
                               <div class="imageBannerPadding1">
-                                 <img class="imageBannerMost" src="images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg">
+                                 <img class="imageBannerMost" src="images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Image d'hébergement sur Marseille">
                               </div>
                               <div class="informationShop1">
                                  <div class="describox">
@@ -215,7 +215,7 @@
 
                            <a class="classMost1">
                               <div class="imageBannerPadding1">
-                                 <img class="imageBannerMost" src="images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg">
+                                 <img class="imageBannerMost" src="images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Image d'hébergement sur Marseille">
                               </div>
                               <div class="informationShop1">
                                  <div class="describox">
@@ -234,7 +234,7 @@
 
                            <a class="classMost1">
                               <div class="imageBannerPadding1">
-                                 <img class="imageBannerMost" src="images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg">
+                                 <img class="imageBannerMost" src="images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Image d'hébergement sur Marseille">
                               </div>
                               <div class="informationShop1">
                                  <div class="describox">
@@ -258,11 +258,86 @@
             </div>
          </div>
          <!-- Activités -->
-         <div id="div4">Quatre</div>
+         <div class="activitiesCont">
+            <p class="titleSearch">Activités à Marseille</p>
+            <div id="divActivites">
+               <div class="part1">
+                  <a class="classResult1">
+                     <div class="imageBannerPadding">
+                        <img class="imageBanner2" src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Image des activités sur Marseille">
+                     </div>
+                     <p class="subTitleActivities">Vieux Port</p>
+                  </a>
+               </div>
+               <div class="part2">
+                  <div class="sousPart1">
+                     <a class="classResult1">
+                        <div class="imageBannerPadding">
+                           <img class="imageBanner3" src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Image des activités sur Marseille">
+                        </div>
+                        <p class="subTitleActivities">Fort de Pomègues</p>
+                     </a>
+                  </div>
+                  <div class="sousPart2">
+                     <a class="classResult1">
+                        <div class="imageBannerPadding">
+                           <img class="imageBanner4" src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Image des activités sur Marseille">
+                        </div>
+                        <p class="subTitleActivities">Îles du Frioul</p>
+                     </a>
+                  </div>
+               </div>
+               <div class="part1">
+                  <a class="classResult1">
+                     <div class="imageBannerPadding">
+                        <img class="imageBanner2" src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Image des activités sur Marseille">
+                     </div>
+                     <p class="subTitleActivities">Parc National des Calanques</p>
+                  </a>
+               </div>
+               <div class="part3">
+                  <div class="sousPart3">
+                     <a class="classResult1">
+                        <div class="imageBannerPadding">
+                           <img class="imageBanner4" src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Image des activités sur Marseille">
+                        </div>
+                        <p class="subTitleActivities">Notre-Dame-de-la-Garde</p>
+                     </a>
+                  </div>
+                  <div class="sousPart4">
+                     <a class="classResult1">
+                        <div class="imageBannerPadding">
+                           <img class="imageBanner3" src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Image des activités sur Marseille">
+                        </div>
+                        <p class="subTitleActivities">Parc Longchamp</p>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
       </main>
       <footer>
          <!-- Footer -->
-         <div id="div5">Cinq</div>
+         <div id="divFooter">
+            <div class="gridFooter">
+               <div class="aboutUs">
+                  <h3>A propos</h3>
+                  <a href="#">Fonctionnement du site</a>
+                  <a href="#">Conditions générales de vente</a>
+                  <a href="#">Données et confidentialité</a>
+               </div>
+               <div class="hosts">
+                  <h3>Nos hébergements</h3>
+                  <a href="#">Charte qualité</a>
+                  <a href="#">Soumettre votre hôtel</a>
+               </div>
+               <div class="helpMe">
+                  <h3>Assistance</h3>
+                  <a href="#">Centre d'aide</a>
+                  <a href="#">Nous contacter</a>
+               </div>
+            </div>
+         </div>
       </footer>
    </div>
 </body>
