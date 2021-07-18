@@ -515,6 +515,7 @@ h3 {
 /* Fin footer */
 
 @media (max-width: 1350px) { /* Début des médias queries */
+
    .gridDivHosts {
       grid-template-columns: repeat(1 ,1fr);
       grid-template-rows: repeat(1, 1fr);
@@ -538,6 +539,10 @@ h3 {
 
    .gridClassResult {
       margin-top: 2em;
+   }
+   
+   .inputText {
+      width: 30%;
    }
 }
 
