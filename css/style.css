@@ -685,6 +685,10 @@ h3 {
    .gridFooter {
       gap: 4em;
    }
+
+   .titleSearch {
+      padding-bottom: 1.5em;
+   }
       
    /* Fin activités à Marseille */
 }
@@ -694,10 +698,6 @@ h3 {
 /* Début responsive téléphone */
 
 @media (max-width: 600px) {
-
-   .titleSearch {
-      padding-bottom: 1.5em;
-   }
 
    .gridClassResult {
       grid-template-columns: repeat(1 ,1fr);
