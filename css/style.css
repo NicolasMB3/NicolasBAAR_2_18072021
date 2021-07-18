@@ -198,7 +198,7 @@ i.fas {
 #divHosts { /* Début hébergement Marseille */
    display: grid;
    grid-template-columns: 100%;
-   margin-bottom: 4rem;
+   margin-bottom: 1.5em;
 }
 
 .gridDivHosts {
@@ -230,6 +230,13 @@ i.fas {
 .titleSearch {
    font-weight: bold;
    font-size: 24px;
+}
+
+.titleActivities {
+   font-weight: bold;
+   font-size: 24px;
+   padding: 1em 0 1em 0;
+   margin-top: 0;
 }
 
 .gridClassResult {
@@ -507,10 +514,87 @@ h3 {
 
 /* Fin footer */
 
-@media (max-width: 1300px) { /* Début des médias queries */
+@media (max-width: 1350px) { /* Début des médias queries */
+   .gridDivHosts {
+      grid-template-columns: repeat(1 ,1fr);
+      grid-template-rows: repeat(1, 1fr);
+   }
+
+   .mostSearch {
+      grid-row-start: 1;
+   }
+
+   .host {
+      background-color: #ffffff;
+   }
+
+   #divHosts {
+      margin-bottom: 1.5em;
+   }
+
+   .titleSearch {
+      margin-bottom: 0;
+   }
+
+   .gridClassResult {
+      margin-top: 2em;
+   }
+}
+
+@media (max-width: 1025px) { /* Début des médias queries */
+
+   header a { /* Barre de navigation */
+      padding-left: 2.4vw;
+   }
+      
+   #logo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+   }
+      
+   #divNavigation {
+      grid-template-columns: auto auto;
+      grid-template-rows: auto auto;
+      padding: 0;
+   }
+      
+   .register {
+      grid-area: 1/2;
+   } 
+      
+   #divNavigation > a:hover {
+      border-top: none;
+   }
+      
+   .respBorder {
+      border-bottom: 3px solid #d9d9d9;
+   }
+      
+   .buttonSearch > i {
+      display: block;
+   }
+      
+   .searchBar {
+      display: none;
+   }
+      
+   .respBorder:hover {
+      border-top: none;
+      border-bottom: 3px solid #0065FC;
+      color: #0065FC;
+   }
+
+   /* Fin barre de navigation */
 
    .firstInformation {
       margin: 5% 5% 0 5%;
+   }
+
+   .mostSearch {
+      border-radius: 0;
+      padding-bottom: 2rem;
    }
 
    .foundBar {
@@ -537,63 +621,10 @@ h3 {
    #firstTitle {
       font-size: 24px;
    }
-
-   header a {
-      padding-left: 2.4vw;
-   }
-
-   #logo {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0;
-   }
-
-   #divNavigation {
-      grid-template-columns: auto auto;
-      grid-template-rows: auto auto;
-      padding: 0;
-   }
-
-   .register {
-      grid-area: 1/2;
-   } 
-
-   #divNavigation > a:hover {
-      border-top: none;
-   }
-
-   .buttonSearch > i {
-      display: block;
-   }
-
-   .searchBar {
-      display: none;
-   }
    
-   .respBorder {
-      border-bottom: 3px solid #d9d9d9;
-   }
-
-   .respBorder:hover {
-      border-top: none;
-      border-bottom: 3px solid #0065FC;
-      color: #0065FC;
-   }
-
    .buttonSearch {
       border-radius: 0 1rem 1rem 0;
       min-width: 4em;
-   }
-
-   .gridDivHosts {
-      grid-template-columns: repeat(1 ,1fr);
-      grid-template-rows: repeat(1, 1fr);
-  }
-
-   .mostSearch {
-      grid-row-start: 1;
-      border-radius: 0;
    }
 
    .host {
