@@ -146,6 +146,7 @@ i.fas {
 
 .ecoSearch:hover {
    border-color: #DEEBFF;
+   color: #2b6de7;
 }
 
 .boxFont {
@@ -319,6 +320,10 @@ i.fas {
    padding: 0.4em;
 }
 
+.classResult1:hover, .classMost1:hover {
+   color: #2b6de7;
+}
+
 /* Fin hébergement Marseille */
 
 .titleMost { /* Début "Les plus populaire" */
@@ -485,7 +490,6 @@ h3 {
 #subTitle {
    margin-top: 0.8%;
 }
-
 
 /* Fin activités Marseille */
 
