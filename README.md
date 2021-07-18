@@ -6,14 +6,14 @@
 <br />
 
 <p align="center">
-  <a href="https://github.com/NicolasMB3/NicolasBAAR_2_18072021">
+  <a href="https://nicolasmb3.github.io/NicolasBAAR_2_18072021/">
     <img src="images/logo/Reservia.svg" alt="Logo">
   </a>
 
   <p align="center">
     Par Nicolas BAAR
     <br />
-    <a href="https://github.com/NicolasMB3/NicolasBAAR_2_18072021/issues">Un problème avec le code ?</a>
+    <a href="https://nicolasmb3.github.io/NicolasBAAR_2_18072021/">Accéder à la démo</a>
     ·
     <a href="https://github.com/NicolasMB3/NicolasBAAR_2_18072021/issues">Une option à ajouter ?</a>
   </p>
