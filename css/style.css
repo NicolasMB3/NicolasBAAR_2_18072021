@@ -9,7 +9,7 @@ body {
 } 
 
 .container {
-   max-width: 100%;
+   max-width: 85%;
    margin: auto;
 }
 
@@ -493,6 +493,7 @@ h3 {
 
 /* Fin activités Marseille */
 
+
 #divFooter { /* Début footer */
    grid-column-start: 1;
    grid-column-end: 9;
@@ -514,11 +515,17 @@ h3 {
    grid-template-rows: repeat(1 ,1fr);
    gap: 15rem;
    margin: 3em 2em 2rem 5rem;
+   margin-left: 15rem;
 }
 
 /* Fin footer */
 
 @media (max-width: 1350px) { /* Début des médias queries */
+      
+   .container {
+      max-width: 100%;
+      margin: auto;
+   }
 
    .gridDivHosts {
       grid-template-columns: repeat(1 ,1fr);
@@ -547,6 +554,10 @@ h3 {
    
    .inputText {
       width: 30%;
+   }
+
+   .gridFooter {
+      margin-left: 5.5rem;
    }
 }
 
@@ -692,6 +703,10 @@ h3 {
 
    .titleSearch {
       padding-bottom: 1.5em;
+   }
+
+   .gridFooter {
+      margin-left: 3.5rem;
    }
       
    /* Fin activités à Marseille */
