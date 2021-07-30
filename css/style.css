@@ -435,7 +435,6 @@ i.fas {
 .thirdPartement {
    display: grid;
    grid-template-columns: repeat(1 ,1fr);
-   grid-template-rows: 2fr;
    height: 100%; 
    gap: 3rem; 
 }
@@ -491,6 +490,10 @@ i.fas {
 h3 {
    display: flex;
    align-items: center;
+}
+
+h4 {
+   font-size: 22px;
 }
 
 #subTitle {
