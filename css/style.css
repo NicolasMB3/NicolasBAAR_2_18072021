@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
 * { /* Éléments globals au site */
    font-family: 'Raleway', sans-serif;
    scroll-behavior: smooth;
@@ -100,7 +102,10 @@ i.fas {
 
 .inputText {
    width: 16vw;
-   border : 2px solid #F2F2F2;
+   border-top: 2px solid #F2F2F2;
+   border-bottom: 2px solid #F2F2F2;
+   border-left: none;
+   border-right: none;
    padding: 0 1.15rem;
 }
 
@@ -109,7 +114,7 @@ i.fas {
    color: white;
    font-weight: bold;
    border: none;
-   border-radius: 0 1.5rem 1.5rem 0;
+   border-radius: 0 1rem 1rem 0;
    padding: 0 1.5rem;
    font-family: "Raleway", "Sans serif";
    font-size: 1rem;
@@ -247,7 +252,7 @@ i.fas {
    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
    grid-template-rows: repeat(2, 1fr);
    gap: 2rem;
-   margin: 4rem 0 5% 0;
+   margin: 4rem 0 2.5rem 0;
 }
 
 .imageBanner {
@@ -292,7 +297,6 @@ i.fas {
 .learnMore {
    font-size: 20px;
    font-weight: bold;
-   padding-left: 2em;
 }
 
 .firstTestDescription {
@@ -613,7 +617,8 @@ h4 {
    }
       
    .buttonSearch > i {
-      display: block;
+      display: flex;
+      justify-content: center;
    }
       
    .searchBar {
@@ -663,8 +668,8 @@ h4 {
    }
    
    .buttonSearch {
-      border-radius: 0 1rem 1rem 0;
-      min-width: 4em;
+      border-radius: 1rem 1rem 1rem 1rem;
+      width: 3.3rem;
    }
 
    .host {
@@ -730,7 +735,7 @@ h4 {
 
 /* Début responsive téléphone */
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 
    .gridClassResult {
       grid-template-columns: repeat(1 ,1fr);
@@ -738,11 +743,6 @@ h4 {
 
    #divActivites {
       grid-template-columns: repeat(1 ,1fr);
-   }
-
-   .moreInformation {
-      display: flex;
-      justify-content: center;
    }
 
    .gridFooter {
