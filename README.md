@@ -30,9 +30,9 @@ Contenance du site :
 * Création et modification d'annonces les plus populaire,
 * Création et modification des sites à visiter.
 
-## Développer avec :
+## Développé avec :
 
-Liste de tous les languages utilisés pour la création du site :
+Liste de tous les langages utilisés pour la création du site :
 
 * [HTML](https://developer.mozilla.org/fr/docs/Web/HTML)
 * [CSS](https://developer.mozilla.org/fr/docs/Web/CSS)
